@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <title>POSERCLUB_BUSAN</title>
+  <link rel="stylesheet" href="css/form2.css">
+</head>
+<style>
+  sub {
+    color:gray;
+  }
+  ul {
+    list-style:none;
+  }
+ 
+  img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+    }
+
+</style>
+<body>
+  <h1><a href="index.html"><img src="logo.jpg" height= 200
+    ></a></h1>
+  <form>
+  <fieldset>
+    <legend>배송정보</legend>
+    <ul id="shipping">
+      <li>
+        <label for="object">주문 상품</label>
+        <input type="text" id="object" value="포져클럽 set1" readonly> 
+      </li>
+      <li>
+        <label for="name">주문자</label>
+        <input type="text" id="name" autofocus required>
+      </li>
+      <li>
+        <label for="adress">주소</label>
+        <input type="addr" id="adress" autofocus required>
+      </li>
+      <li>
+        <label for="email">이메일</label>
+        <input type="email" id="email">
+      </li>
+      <li>
+        <label for="phone">연락처</label>
+        <input type="tel" id="phone" placeholder="-없이 입력해주세요(01012345973)"
+        required>
+      </li>
+      <li>
+        <label for="shippingdate">배송 지정</label>
+        <input type="date" id="shippingdate">
+          <sub>배송 시작일을 지정 하실 때 입력 부탁드립니다.</sub>
+      </li>
+    </ul>
+  </fieldset>
+  <div>
+    <input type="submit" value="주문하기">
+    <input type="reset" value="취소하기">
+  </div>
+</form>
+</body>
+</html>
